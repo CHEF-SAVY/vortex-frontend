@@ -65,4 +65,10 @@ export const es = {
   "wave.issues.col.status": "Estado",
   "wave.issues.viewPr": "Ver PR #{number}",
   "wave.issues.col.contributor": "Colaborador",
+
+  "calls.title": "Notas de las llamadas de la comunidad",
+  "calls.description": "Notas, decisiones y grabaciones de llamadas anteriores de la comunidad y de gobernanza.",
+  "calls.empty": "Todavía no se han publicado notas de llamadas.",
+  "calls.recording": "Grabación / transcripción",
+  "calls.decisions": "Decisiones",
 } as const satisfies Record<keyof typeof import("./en").en, string>;

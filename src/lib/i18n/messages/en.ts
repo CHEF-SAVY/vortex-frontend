@@ -65,4 +65,10 @@ export const en = {
   "wave.issues.col.status": "Status",
   "wave.issues.viewPr": "View PR #{number}",
   "wave.issues.col.contributor": "Contributor",
+
+  "calls.title": "Community call notes",
+  "calls.description": "Notes, decisions and recordings from past community and governance calls.",
+  "calls.empty": "No call notes have been published yet.",
+  "calls.recording": "Recording / transcript",
+  "calls.decisions": "Decisions",
 } as const;
