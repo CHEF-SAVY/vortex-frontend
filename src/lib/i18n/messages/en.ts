@@ -63,5 +63,6 @@ export const en = {
   "wave.issues.col.complexity": "Complexity",
   "wave.issues.col.points": "Points",
   "wave.issues.col.status": "Status",
+  "wave.issues.viewPr": "View PR #{number}",
   "wave.issues.col.contributor": "Contributor",
 } as const;

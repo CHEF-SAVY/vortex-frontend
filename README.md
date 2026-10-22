@@ -36,6 +36,7 @@ registrations. Part of the multi-repo Vortex stack — see also
 | `/contributors` | `src/app/contributors/page.tsx` | Drips Wave contribution transparency dashboard parsing repository issue metrics |
 | `/privacy` | `src/app/privacy/page.tsx` | Privacy & local-data center: inventory, export, clear, private mode |
 | `/api/contributors` | `src/app/api/contributors/route.ts` | Cached server-side proxy for GitHub contributors (1 h revalidate, stale-while-error) |
+| `/api/issue-prs` | `src/app/api/issue-prs/route.ts` | Resolves completed Wave issue numbers (`?ids=1,2`) to their merged closing PR via the GitHub timeline API (1 h cache, fails soft to no link) |
 
 ---
 
@@ -97,7 +98,7 @@ Optional, **server-only** (never prefix with `NEXT_PUBLIC_`):
 
 | Variable       | Purpose |
 | -------------- | ------- |
-| `GITHUB_TOKEN` | Raises the GitHub API rate limit for `/api/contributors` (read-only, no scopes needed). Without it the route still works, and falls back to the last good response or a bundled snapshot when rate-limited. |
+| `GITHUB_TOKEN` | Raises the GitHub API rate limit for `/api/contributors` and `/api/issue-prs` (read-only, no scopes needed). Without it the route still works, and falls back to the last good response or a bundled snapshot when rate-limited. |
 
 ---
 

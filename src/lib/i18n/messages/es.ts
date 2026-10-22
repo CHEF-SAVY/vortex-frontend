@@ -63,5 +63,6 @@ export const es = {
   "wave.issues.col.complexity": "Complejidad",
   "wave.issues.col.points": "Puntos",
   "wave.issues.col.status": "Estado",
+  "wave.issues.viewPr": "Ver PR #{number}",
   "wave.issues.col.contributor": "Colaborador",
 } as const satisfies Record<keyof typeof import("./en").en, string>;
