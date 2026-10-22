@@ -37,6 +37,7 @@ registrations. Part of the multi-repo Vortex stack — see also
 | `/privacy` | `src/app/privacy/page.tsx` | Privacy & local-data center: inventory, export, clear, private mode |
 | `/api/contributors` | `src/app/api/contributors/route.ts` | Cached server-side proxy for GitHub contributors (1 h revalidate, stale-while-error) |
 | `/api/issue-prs` | `src/app/api/issue-prs/route.ts` | Resolves completed Wave issue numbers (`?ids=1,2`) to their merged closing PR via the GitHub timeline API (1 h cache, fails soft to no link) |
+| `/governance/archive/export` | `src/app/governance/archive/export/route.ts` | `text/csv` download of the archive rows matching the active filters (same filter code as the page, formula-injection safe, capped at 5000 rows) |
 
 ---
 
